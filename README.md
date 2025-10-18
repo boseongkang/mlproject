@@ -14,11 +14,22 @@ Using lyrics from websites have copyright issue so use lyrics data from kaggle. 
 https://www.kaggle.com/datasets/bwandowando/spotify-songs-with-attributes-and-lyrics <br>
 This data set has License CC BY-NC-SA 4.0 which means we can free to share, adapt if we use as NonCommercial and give appropriate credit. <br>
 
+- Part 2: Geonho Lee <br>
+Use the songs collected in Part 1 to analyze their audio characteristics. <br>
+Convert each song’s WAV data into a frequency spectrum to measure the energy distribution across low, mid, and high frequency ranges. <br>
+Estimate the instrument approximation energy ratios to identify which sound ranges are dominant in each song <br>
+Visualize the results to compare how different tracks emphasize different sound bands. <br>
+Compare audio patterns with lyrical patterns to analyze overall music trends. <br>
 
 Model Plans (two parts, one for each author) <br>
 - Part 1: Boseong Kang <br>
 Logistic Regression: Similar to the MNIST Dataset, after preprocessing the data, use one-hot encoding or TF-IDF from scikit-learn to classify from the top 10 songs and others. <br>
 MLP: With preprocessed words, we can classify the top 10 songs vs other songs using ReLu and the sigmoid activation function
+
+- Part 2: Geonho Lee <br>
+Feature Extraction: Convert each song’s WAV data into a frequency spectrum using NumPy and SciPy, and extract numerical features such as band energy ratios. <br>
+Visualization: Use Matplotlib to visualize each song’s frequency spectrum and energy distribution. <br>
+Model: Apply Logistic Regression or Linear SVM models from scikit-learn to analyze the relationship between the extracted audio features and metadata from Part 1. <br>
 
 Project Timeline
 A .gitignore file and a license
