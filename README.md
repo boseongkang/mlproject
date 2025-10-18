@@ -20,9 +20,9 @@ This data set has License CC BY-NC-SA 4.0 which means we can free to share, adap
 
 - Part 2: Geonho Lee <br>
 Use the songs collected in Part 1 to analyze their audio characteristics. <br>
-Convert each song’s WAV data into a frequency spectrum to measure the energy distribution across low, mid, and high frequency ranges. <br>
-Estimate the instrument approximation energy ratios to identify which sound ranges are dominant in each song <br>
-Visualize the results to compare how different tracks emphasize different sound bands. <br>
+Convert each song’s WAV data into a frequency spectrum using NumPy and SciPy, and extract features such as band energy ratios (bass, vocal, cymbal). <br>
+Estimate the instrument approximation energy ratios to identify which sound ranges are dominant in each song. <br>
+Visualize the results using Matplotlib to compare how different tracks emphasize different sound bands. <br>
 Compare audio patterns with lyrical patterns to analyze overall music trends. <br>
 
 Model Plans (two parts, one for each author) <br>
@@ -31,9 +31,8 @@ Logistic Regression: Similar to the MNIST Dataset, after preprocessing the data,
 MLP: With preprocessed words, we can classify the top 10 songs vs other songs using ReLu and the sigmoid activation function
 
 - Part 2: Geonho Lee <br>
-Feature Extraction: Convert each song’s WAV data into a frequency spectrum using NumPy and SciPy, and extract numerical features such as band energy ratios. <br>
-Visualization: Use Matplotlib to visualize each song’s frequency spectrum and energy distribution. <br>
-Model: Apply Logistic Regression or Linear SVM models from scikit-learn to analyze the relationship between the extracted audio features and metadata from Part 1. <br>
+Visualization: Use Matplotlib to visualize each song’s frequency spectrum and energy distribution. <br> 
+Model: Apply Logistic Regression from scikit-learn to analyze relationships between extracted audio features (band energy ratios) and data from Part 1. Additionally, since non-linear relationships can’t be properly captured by Logistic Regression, we will use MLP implemented with PyTorch to explore non-linear sound patterns across frequency bands.<br>
 
 Project Timeline
 A .gitignore file and a license
