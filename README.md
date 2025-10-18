@@ -1,8 +1,8 @@
 # mlproject
 <hr>
 
-## 📅 Project Roadmap
-[Open the Roadmap on GitHub](https://github.com/users/boseongkang/projects/2/views/1)
+## Our Project Roadmap link 
+[Open the Roadmap on GitHub](https://github.com/users/boseongkang/projects/2/views/1?layout=roadmap)
 
 
 Project Title : 
