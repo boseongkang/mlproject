@@ -7,8 +7,19 @@ Authors : Boseong Kang, Geonho Lee
 <br>
 Description of Question and Research Topic (5 Sentences)
 Project Outline/Plan
-Data Collection Plan (two parts, one for each author)
-Model Plans (two parts, one for each author)
+Data Collection Plan (two parts, one for each author)<br>
+- Part 1: Boseong Kang <br>
+Use billboard.py Python library to get Billboard top 100 song's title, rank, and artist. <br>
+Using lyrics from websites have copyright issue so use lyrics data from kaggle. <br>
+https://www.kaggle.com/datasets/bwandowando/spotify-songs-with-attributes-and-lyrics <br>
+This data set has License CC BY-NC-SA 4.0 which means we can free to share, adapt if we use as NonCommercial and give appropriate credit. <br>
+
+
+Model Plans (two parts, one for each author) <br>
+- Part 1: Boseong Kang <br>
+Logistic Regression: Similar to the MNIST Dataset, after preprocessing the data, use one-hot encoding or TF-IDF from scikit-learn to classify from the top 10 songs and others. <br>
+MLP: With preprocessed words, we can classify the top 10 songs vs other songs using ReLu and the sigmoid activation function
+
 Project Timeline
 A .gitignore file and a license
 
