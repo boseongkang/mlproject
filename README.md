@@ -1,6 +1,10 @@
 # mlproject
 <hr>
 
+## 📅 Project Roadmap
+[Open the Roadmap on GitHub](https://github.com/users/boseongkang/projects/2/views/1)
+
+
 Project Title : 
 <br>
 Authors : Boseong Kang, Geonho Lee
