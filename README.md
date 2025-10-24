@@ -1,8 +1,5 @@
-# mlproject
+#Project Title : **Make your song Bilboard Top 100**  
 <hr>
-
-Project Title : **Make your song Bilboard Top 100**  
-<br>
 Authors : Boseong Kang, Geonho Lee
 <br>
 Description of Question and Research Topic (5 Sentences)
@@ -37,8 +34,8 @@ Visualization: Use Matplotlib to visualize each song’s frequency spectrum and 
 Model: Apply Logistic Regression from scikit-learn to analyze relationships between extracted audio features (band energy ratios) and data from Part 1. Additionally, since non-linear relationships can’t be properly captured by Logistic Regression, we will use MLP implemented with PyTorch to explore non-linear sound patterns across frequency bands.<br>
 
 Project Timeline
+<img width="1713" height="264" alt="Image" src="https://github.com/user-attachments/assets/a10e609a-4738-4381-80b8-b7c915fb93d7" />
 ## Our Project Roadmap link 
-[Open the Roadmap on GitHub](https://github.com/users/boseongkang/projects/2    /views/1?layout=roadmap)
-
+[Open the Roadmap on GitHub](https://github.com/users/boseongkang/projects/2/views/1?layout=roadmap)
 A .gitignore file and a license
 
