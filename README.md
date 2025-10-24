@@ -2,7 +2,6 @@
 <hr>
 
 ### Authors : Boseong Kang, Geonho Lee
-<br>
 
 ## Description of Question and Research Topic<br>
 This project aims to comprehensively analyze lyric embeddings and the characteristics of commonly used instruments for Billboard's Top 100 songs, revealing trends over time. <br>
