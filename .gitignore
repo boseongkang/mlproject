@@ -1,0 +1,12 @@
+*.mp3
+*.WAV
+
+.env
+.env.*
+*.env
+
+.DS_Store
+Thumbs.db
+
+
+

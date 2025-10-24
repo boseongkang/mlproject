@@ -36,6 +36,7 @@ Model: Apply Logistic Regression from scikit-learn to analyze relationships betw
 Project Timeline
 <img width="1713" height="264" alt="Image" src="https://github.com/user-attachments/assets/a10e609a-4738-4381-80b8-b7c915fb93d7" />
 ## Our Project Roadmap link 
+It may take time to load our Roadmap.
 [Open the Roadmap on GitHub](https://github.com/users/boseongkang/projects/2/views/1?layout=roadmap)
 A .gitignore file and a license
 
