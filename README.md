@@ -40,5 +40,4 @@ Model: Apply Logistic Regression from scikit-learn to analyze relationships betw
 ## Our Project Roadmap link 
 It may take time to load our Roadmap.<br>
 [Open the Roadmap on GitHub](https://github.com/users/boseongkang/projects/2/views/1?layout=roadmap)
-A .gitignore file and a license
 
