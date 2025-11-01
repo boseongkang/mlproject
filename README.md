@@ -15,7 +15,8 @@ Data Collection Plan (two parts, one for each author)<br>
 - Part 1: Boseong Kang <br>
 Use billboard.py Python library to get Billboard top 100 song's title, rank, and artist. <br>
 Using lyrics from websites have copyright issue so use lyrics data from kaggle. <br>
-https://www.kaggle.com/datasets/bwandowando/spotify-songs-with-attributes-and-lyrics <br>
+~https://www.kaggle.com/datasets/bwandowando/spotify-songs-with-attributes-and-lyrics <br>~
+https://www.kaggle.com/datasets/suparnabiswas/billboard-hot-1002000-2023-data-with-features <br> (new dataset)
 This data set has License CC BY-NC-SA 4.0 which means we can free to share, adapt if we use as NonCommercial and give appropriate credit. <br>
 
 - Part 2: Geonho Lee <br>
