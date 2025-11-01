@@ -17,8 +17,8 @@ Use billboard.py Python library to get Billboard top 100 song's title, rank, and
 Using lyrics from websites have copyright issue so use lyrics data from kaggle. <br>
 ~https://www.kaggle.com/datasets/bwandowando/spotify-songs-with-attributes-and-lyrics <br>~
 ~This data set has License CC BY-NC-SA 4.0 which means we can free to share, adapt if we use as NonCommercial and give appropriate credit. <br>~
-https://www.kaggle.com/datasets/suparnabiswas/billboard-hot-1002000-2023-data-with-features <br> (new dataset)
-New dataset License CC0: Public Domain, -> You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission
+https://www.kaggle.com/datasets/suparnabiswas/billboard-hot-1002000-2023-data-with-features (new dataset)<br> 
+New dataset License **CC0: Public Domain**, -> You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission
 
 - Part 2: Geonho Lee <br>
 Use the songs collected in Part 1 to analyze their audio characteristics. <br>
