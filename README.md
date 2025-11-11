@@ -1,4 +1,4 @@
-# Project Title : **Make your song Bilboard Top 100**  
+# Project Title : **Make your song Billboard Top 100**  
 <hr>
 
 ### Authors : Boseong Kang, Geonho Lee
