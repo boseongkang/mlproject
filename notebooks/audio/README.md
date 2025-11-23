@@ -2,7 +2,7 @@
 
 ## Goal
 This part focuses on extracting audio based features from Billboard Hot 100 songs using WAV files.  
-The goal is to quantify instrument related frequency characteristics (e.g., bass / vocal / cymbal dominance) and prepare audio features that can later be combined with lyric features for Top 10 prediction.
+The goal is to quantify instrument related frequency characteristics (e.g., bass / vocal / cymbal dominance) and prepare audio features that can later be combined with lyric features for Top 100 prediction.
 
 ---
 
