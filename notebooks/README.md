@@ -8,4 +8,9 @@
 !pip install billboard.py
 !pip install kagglehub
 
+need to fix :
+Smooth song -> 2 singer Santana and Rob Thomas
 
+need to find if there same case as this
+
+1 song with 2 or n singers
