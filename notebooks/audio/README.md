@@ -1,38 +1,79 @@
-# Part 2 — Audio Analysis
+## Part 2 — Audio Analysis 🎧
 
-## Goal
-This part focuses on extracting audio based features from Billboard Hot 100 songs using WAV files.  
-The goal is to quantify instrument related frequency characteristics (e.g., bass / vocal / cymbal dominance) and prepare audio features that can later be combined with lyric features for future prediction.
+This part focuses on extracting **audio-based features** from Billboard Hot 100 songs using WAV files.  
+Our goal is to capture **instrument / timbre characteristics** (e.g., bass / vocal / cymbal dominance) and build a feature table that can later be combined with lyric features for prediction models.
 
 ---
 
-## What This Part Does
+###  Goal
 
-For each WAV file, the pipeline:
+- Quantify frequency–domain characteristics of each track  
+- Summarize them into a **single row per song** (CSV / DataFrame)  
+- Use these features to explore **“Top 30 vs. non–Top 30”** prediction with simple ML models
 
-### 1. Load WAV
-- Read audio waveform and sample rate.
+All experiments in this part are implemented in **`Audio_Analysis.ipynb`** using **pre-computed CSV files**  
+(`audio_features_100songs.csv`, `audio_features_audio2.csv`), so the notebook can be run without the original WAV files.
 
-### 2. Stereo → Mono
-- Convert 2-channel audio into a single mono channel for consistent analysis.
+---
 
-### 3. Normalization
-- Scale amplitudes to the range **[-1, 1]** to stabilize comparisons across tracks.
+###  Files in this folder
 
-### 4. Waveform Visualization
-- Plot the normalized waveform (usually first few seconds for sanity check).
+- `Audio_Analysis.ipynb` – main notebook for audio feature extraction and ML experiments  
+- `audio_features_100songs.csv` – features for 100 training songs  
+- `audio_features_audio2.csv` – features for an additional set of songs (used for later experiments)  
+- `audio_wav/`, `audio_wav_2/` – placeholder folders for the original WAV files (not required to run the notebook)  
 
-### 5. Spectrogram / Frequency Analysis
-- Convert waveform into a time-frequency representation (STFT / spectrogram).
+---
 
-### 6. Band Energy Ratios
-Compute energy proportions across frequency bands:
-- **Bass (low)**
-- **Mid / Vocal (mid)**
-- **High / Cymbal (high)**
+###  Processing Pipeline (per WAV file)
 
-These ratios approximate dominant instrument ranges.
+For each WAV file, the pipeline performs:
 
-### 7. Feature Aggregation
-- Store extracted audio features into a table (DataFrame/CSV), one row per song.
+1. **Load WAV**
+   - Read raw audio waveform and sample rate.
+
+2. **Stereo → Mono**
+   - Convert 2-channel audio into a single mono channel for consistent analysis.
+
+3. **Normalization**
+   - Scale amplitudes to the range **[-1, 1]** to stabilize comparisons across tracks.
+
+4. **Waveform Visualization**
+   - Plot the normalized waveform (usually the first few seconds) as a **sanity check**.
+
+5. **Spectrogram / Frequency Analysis**
+   - Convert the waveform into a **time–frequency representation** using STFT / spectrogram.
+
+6. **Band Energy Ratios**
+   - Compute energy proportions across three frequency bands:
+     - **Bass (low)**
+     - **Mid / Vocal (mid)**
+     - **High / Cymbal (high)**
+   - These ratios approximate dominant instrument / timbre ranges.
+
+7. **Feature Aggregation**
+   - Extract summary statistics (band ratios + MFCC means/stds, etc.).
+   - Store one feature vector per song → **DataFrame / CSV (one row per track)**.
+
+---
+
+###  ML Experiments (short summary)
+
+Using the aggregated audio features:
+
+- We train **Logistic Regression** and **Random Forest** models  
+- Target: a manually defined **`top30`** flag (our own Top-30 list, not true Billboard labels)
+- The results show:
+  - Audio features contain **some predictive signal**, especially in timbre-related stats  
+  - But audio-only information is **not sufficient** for reliable Top-30 prediction  
+  - This motivates combining audio with **lyrics and other metadata** in later parts
+
+---
+
+###  How to run
+
+1. Open `Audio_Analysis.ipynb`.
+2. Make sure `audio_features_100songs.csv` and `audio_features_audio2.csv` are in the **same folder**.
+3. Run the notebook from top to bottom (`Run all`).  
+   - The notebook uses the pre-computed CSVs, so it does **not** require the original WAV files to be present.
 
