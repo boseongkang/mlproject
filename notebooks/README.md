@@ -1,13 +1,12 @@
-Data Expansion (From Text to Audio)
-Lyrics only contain the message of a song. However, the musical atmosphere is also crucial for a hit song. We broadened the model's perspective by collecting additional audio features such as MFCC (timbre) and Frequency Ratios (energy across different frequency bands).
+Part 1: Boseong Kang
 
-Technical Challenges in Data Engineering (Robust Preprocessing)
-Combining data from different sources (Billboard vs. Spotify) resulted in many missing values ​​due to differences in naming conventions (e.g., "feat." vs. "featuring"). To address this, we applied normalization and string matching algorithms to minimize data loss.
+Automated Data Collection: We developed a script using the billboard.py library to automatically scrape and compile Billboard Hot 100 charts over 24 years (2000-2023), building a dataset consisting of over 28,000 entries.
 
-Modeling Strategy (Random Forest)
-This is a complex dataset mixing lyrical data (sparse vectors) and audio data (continuous numerical values). To effectively capture the non-linear relationships between these heterogeneous data types and prevent overfitting, we adopted the Random Forest Classifier. As a result, we achieved improved accuracy (approximately 85%) compared to a model using only lyrics.
+Strategic Data Integration: To overcome copyright restrictions and API limitations encountered when directly scraping lyrics, we utilized a high-quality "Billboard Hot 100 Data with Features" dataset available on Kaggle.
 
-Real-World Validation (Model in Action)
-We didn't just rely on test set scores. We tested the model on the latest hit songs from 2023-2024 that were not used in training. The model accurately predicted that these songs had a high probability of becoming hits. This proves that our model didn't simply memorize past data but generalizes well  the formula for successful songs.
+Data Alignment and Cleaning: We implemented a robust data merging pipeline.  By applying string normalization techniques, we addressed title/artist inconsistencies between the scraped Billboard data and the Kaggle dataset (e.g., differences between 'feat' and 'featuring'), ensuring accurate mapping of lyric data and ranking data.
+Modeling Strategy (Random Forest) This is a complex dataset mixing lyrical data (sparse vectors) and audio data (continuous numerical values). To effectively capture the non-linear relationships between these heterogeneous data types and prevent overfitting, we adopted the Random Forest Classifier. As a result, we achieved improved accuracy (approximately 85%) compared to a model using only lyrics.
+Real-World Validation (Model in Action) We didn't just rely on test set scores. We tested the model on the latest hit songs from 2023-2024 that were not used in training. The model accurately predicted that these songs had a high probability of becoming hits. This proves that our model didn't simply memorize past data but generalizes well the formula for successful songs.
 
-Furthermore, we plan to upload a function to this GitHub repository that allows users to input their own WAV files and lyrics to predict song rankings.
+Future Roadmap
+Plan to deploy a user-interactive feature allowing users to upload their own WAV files and lyrics to predict potential Billboard rankings.
