@@ -1,4 +1,4 @@
-##Part 1: Boseong Kang
+## Part 1: Boseong Kang
 
 **Automated Data Collection:** We developed a script using the billboard.py library to automatically scrape and compile Billboard Hot 100 charts over 24 years (2000-2023), building a dataset consisting of over 28,000 entries.<br>
 
@@ -16,5 +16,5 @@ We tested the model on the latest hit songs from 2023-2024 that were not used in
 The model accurately predicted that these songs had a high probability of becoming hits.<br>
 This proves that our model didn't simply memorize past data but generalizes well the formula for successful songs.
 
-##Future Roadmap<br>
+## Future Roadmap<br>
 Plan to deploy a user-interactive feature allowing users to upload their own WAV files and lyrics to predict potential Billboard rankings.
