@@ -3,6 +3,8 @@
 This part focuses on extracting **audio-based features** from Billboard Hot 100 songs using WAV files.  
 Our goal is to capture **instrument / timbre characteristics** (e.g., bass / vocal / cymbal dominance) and build a feature table that can later be combined with lyric features for prediction models.
 
+To actually run the code in our environment, quite a few parts (such as the sections related to wav_path) need to be commented out. I left them in the script so that we could still see the outputs from the final run. In practice, if you go through the code below and comment out those specific parts, the code will execute normally.
+
 ---
 
 ###  Goal
